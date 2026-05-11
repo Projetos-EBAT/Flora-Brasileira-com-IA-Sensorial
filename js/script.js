@@ -120,7 +120,16 @@ const plantsData = {
                 audio: 'assets/audio/sao-paulo-audio.mp3'
             }
         },
-        { id: 'espirito-santo', name: 'Espírito Santo (ES)', available: false }
+        { 
+            id: 'espirito-santo', 
+            name: 'Espírito Santo (ES)',
+            plant: {
+                name: 'Jequitibá-rosa',
+                scientific: 'Cariniana legalis',
+                slogan: 'Um dos maiores gigantes da Mata Atlântica',
+                audio: 'assets/audio/espirito-santo-audio.mp3'
+            }
+        }
     ],
     sul: [
         {
