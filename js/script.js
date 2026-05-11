@@ -258,13 +258,28 @@ function createStateCard(state) {
         const actions = document.createElement('div');
         actions.className = 'actions';
 
+        // Botão de Áudio
         const audioBtn = document.createElement('button');
         audioBtn.className = 'audio-button btn btn-primary';
         audioBtn.textContent = '🔊';
         audioBtn.setAttribute('aria-label', `Reproduzir áudio de ${state.plant.name}`);
         audioBtn.addEventListener('click', () => playAudio(state.plant.audio, audioBtn));
 
+        // Novo: Botão de PDF
+        const pdfBtn = document.createElement('button');
+        pdfBtn.className = 'audio-button btn btn-primary'; // Você pode ajustar essa classe conforme o seu CSS
+        pdfBtn.textContent = '📄'; // Ícone de documento
+        pdfBtn.setAttribute('aria-label', `Abrir PDF com dados de ${state.name}`);
+        pdfBtn.addEventListener('click', () => {
+            // Gera o caminho do arquivo dinamicamente com base no ID do estado
+            const pdfPath = `assets/dados/${state.id}-dados.pdf`;
+            window.open(pdfPath, '_blank'); // Abre o PDF em uma nova aba do navegador
+        });
+
+        // Adicionando os botões na div actions
         actions.appendChild(audioBtn);
+        actions.appendChild(pdfBtn); 
+        
         card.appendChild(actions);
     }
 
