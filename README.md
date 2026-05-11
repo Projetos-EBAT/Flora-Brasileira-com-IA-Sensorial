@@ -159,6 +159,8 @@ Para completar o site com as 14 plantas faltantes:
 
 Processo Criativo: [Acessar](https://docs.google.com/document/d/1Zxdykr8BO2soSFMpBQfI22gw89WXAuWi4FlmBYlkvEk/edit?usp=sharing)
 
+Página Web: [Acessar](https://projetos-ebat.github.io/Flora-Brasileira-com-IA-Sensorial/)
+
 ---
 
 **Desenvolvido com ❤️ para a Flora Brasileira**
